@@ -23,9 +23,6 @@ This project is used for deployment purposes.
 
 Deployment Link: [http://13.49.238.239:3000/](http://13.49.238.239:3000/)
 
-![image](https://github.com/Arosh-Upathilak/My-CRUD-frontend/assets/150613388/eb74eaf0-58ce-4e3a-8655-2a442f710c2f)
-
-![image](https://github.com/Arosh-Upathilak/My-CRUD-frontend/assets/150613388/1bed5105-79ec-40f4-a096-4b368c1b4b5d)
 
 See [deployment documentation](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
