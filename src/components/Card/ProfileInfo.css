@@ -1,0 +1,29 @@
+.ProfileInfo{
+    display: flex;
+    align-items: center;
+    gap :30px;
+}
+.ProfileInfo-logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #f1f1f1;
+}
+.name-text{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.logout-btn{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+}
+.logout-btn:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,35 @@
+name: Deploy Node Application
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Docker Image
+        run: docker build -t aau2000/crud-frontend --build-arg REACT_APP_BASE_URL="${{ secrets.REACT_APP_BASE_URL }}" .
+
+      - name: Publish Image to Docker Hub
+        run: docker push aau2000/crud-frontend:latest
+
+  deploy:
+    needs: build
+    runs-on: self-hosted
+    steps:
+      - name: Pull image from Docker Hub
+        run: docker pull aau2000/crud-frontend:latest
+
+      - name: Delete old container if exists
+        run: docker rm -f reactjs-app-container
+
+      - name: Run Docker Container
+        run: docker run -d -p 3000:80 --name reactjs-app-container aau2000/crud-frontend

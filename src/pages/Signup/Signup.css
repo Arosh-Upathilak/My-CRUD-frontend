@@ -1,0 +1,121 @@
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .signup__container {
+    display: flex;
+    min-height: 60vh;
+    width: 60%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .image__container {
+    flex: 1;
+    background-color: #103cbe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+  }
+  
+  .image__container .verified {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .image__container .join {
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .signup__text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .header-text {
+    text-align: left; /* Changed from 'start' to 'left' for consistency */
+    margin-bottom: 20px;
+  }
+  
+  .header-text h2 {
+    font-size: 2rem;
+  }
+  
+  form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .signup__form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .form-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:160px;
+  }
+  
+  .form-check .remember {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .forgot:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  small {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .error-msg{
+    color: red;
+  }
+  .signup__form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .signup__form button:hover {
+    background-color: #0056b3;
+  }
+  .row-text{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+  }
+
+  .link-text{
+    color: blue;
+    cursor: pointer;
+  }
